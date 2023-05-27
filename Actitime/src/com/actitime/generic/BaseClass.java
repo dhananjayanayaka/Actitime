@@ -11,6 +11,9 @@ import com.actitime.pom.EnterTimeTrack;
 import com.actitime.pom.Login;
 
 public class BaseClass {
+static {
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+	}
 	public static WebDriver driver;
 	@BeforeTest
 	public void openBrowser() {
